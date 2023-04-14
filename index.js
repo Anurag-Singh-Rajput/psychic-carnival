@@ -45,7 +45,7 @@ app.get("/api/notes/:id", (req, res) => {
   const note = notes.find((note) => note.id === id);
   if (note) res.json(note);
   else {
-    res.status(404).send("<h1>404 Not(e) FOund hehehe</h1>");
+    res.status(404).send("<h1>404 Not(e) Found hehehe</h1>");
   }
 });
 
